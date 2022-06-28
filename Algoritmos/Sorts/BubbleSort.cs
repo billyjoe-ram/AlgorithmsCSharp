@@ -5,7 +5,8 @@
         /// <summary>
         ///     Sorting method that compares the current
         ///     element of the iteration with its next
-        ///     in the array.
+        ///     and BUBBLES it up to the end of the
+        ///     collection.
         ///     Efficient for smalll collections.
         /// </summary>
         /// <param name="collection"></param>
