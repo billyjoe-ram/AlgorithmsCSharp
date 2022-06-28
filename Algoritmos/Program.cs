@@ -10,4 +10,10 @@ int[] toSortArray = new int[]
 
 Console.WriteLine("Array before sorting");
 
+Console.WriteLine(string.Join(", ", toSortArray));
+
+Console.WriteLine("\nArray after sorting");
+
+Console.WriteLine(string.Join(", ", new BubbleSort().Sort(toSortArray)));
+
 Console.ReadLine();
