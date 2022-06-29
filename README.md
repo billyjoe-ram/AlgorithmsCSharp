@@ -2,7 +2,7 @@
 
 ## Algorithms Implemented
 - [x] Bubble Sort
-- [ ] Selection Sort
+- [x] Selection Sort
 - [ ] Quick Sort
 - [ ] Insertion Sort
 - [ ] Comb Sort
