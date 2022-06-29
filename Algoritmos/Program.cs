@@ -16,4 +16,6 @@ Console.WriteLine("\nArray after sorting");
 
 Console.WriteLine(string.Join(", ", new BubbleSort().Sort(toSortArray)));
 
+Console.WriteLine(string.Join(", ", new SelectionSort().Sort(toSortArray)));
+
 Console.ReadLine();
