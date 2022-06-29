@@ -1,6 +1,8 @@
 # Algorithms - C#
 
 ## Algorithms Implemented
+
+### Sort
 - [x] Bubble Sort
 - [x] Selection Sort
 - [ ] Quick Sort
