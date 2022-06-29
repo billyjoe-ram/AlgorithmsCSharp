@@ -7,7 +7,8 @@
         ///     element of the iteration with its next
         ///     and BUBBLES it up to the end of the
         ///     collection.
-        ///     Efficient for smalll collections.
+        ///     
+        ///     "O(n²)" (quadratic) time complexity
         /// </summary>
         /// <param name="collection"></param>
         /// <returns></returns>
