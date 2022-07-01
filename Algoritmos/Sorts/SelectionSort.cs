@@ -8,7 +8,6 @@
         ///     and SELECTS it to replace in
         ///     the current position;
         ///     
-        ///     "O(n²)" (quadratic) time complexity
         /// </summary>
         /// <param name="collection"></param>
         /// <returns></returns>
@@ -19,27 +18,31 @@
             int minValue;
             int minValueIndex;
 
+            var sortedCollection = new int[collection.Length];
+
+            collection.CopyTo(sortedCollection, 0);
+
             // Iterates the collection to sort
-            for (int i = 0; i < collection.Length; i++)
+            for (int i = 0; i < sortedCollection.Length; i++)
             {
                 minValueIndex = i;
 
                 // Iterates the collection to find the closest
                 // smallest value and select it
-                for (int j = i + 1; j < collection.Length; j++)
+                for (int j = i + 1; j < sortedCollection.Length; j++)
                 {
-                    if (collection[j] < collection[minValueIndex])
+                    if (sortedCollection[j] < sortedCollection[minValueIndex])
                     {
                         minValueIndex = j;
                     }
                 }
 
-                minValue = collection[minValueIndex];
-                collection[minValueIndex] = collection[i];
-                collection[i] = minValue;
+                minValue = sortedCollection[minValueIndex];
+                sortedCollection[minValueIndex] = sortedCollection[i];
+                sortedCollection[i] = minValue;
             }
 
-            return collection;
+            return sortedCollection;
         }
     }
 }
