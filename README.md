@@ -10,7 +10,7 @@
 - [ ] Comb Sort
 
 ### Algorithm to Search 
-- [ ] Linear Search
+- [x] Linear Search
 - [ ] Binary Search
 - [ ] Jump Search
 - [ ] Interpolation Search
@@ -19,3 +19,4 @@
 ## Next Features
 - [ ] Include text-based interaction with user
 - [ ] Include unit tests
+- [ ] Add counter for checking time performances
