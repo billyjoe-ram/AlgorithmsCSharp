@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos.Searchs
 {
-    internal class LinearSearch : ISearchAlgorithm
+    public class LinearSearch : ISearchAlgorithm
     {
         public int Search(int value, int[] collection)
         {

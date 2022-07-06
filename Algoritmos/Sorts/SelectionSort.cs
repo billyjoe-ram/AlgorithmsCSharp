@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos.Sorts
 {
-    internal class SelectionSort : ISortAlgorithm
+    public class SelectionSort : ISortAlgorithm
     {
         /// <summary>
         ///     Sorting method that searchs

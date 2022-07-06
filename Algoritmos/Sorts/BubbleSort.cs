@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos.Sorts
 {
-    internal class BubbleSort : ISortAlgorithm
+    public class BubbleSort : ISortAlgorithm
     {
         /// <summary>
         ///     Sorting method that compares the current

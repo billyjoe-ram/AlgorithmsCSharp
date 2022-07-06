@@ -1,6 +1,6 @@
 ﻿namespace Algoritmos.Sorts
 {
-    internal class QuickSort : ISortAlgorithm
+    public class QuickSort : ISortAlgorithm
     {
         /// <summary>
         ///     A sorting method that set a pivot
