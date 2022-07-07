@@ -1,23 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Algoritmos.Sorts;
+﻿Console.WriteLine("Hello, world!\n");
 
-Console.WriteLine("Hello, World!\nWelcome to Sorting Algorithms 101!\n");
+Console.WriteLine("\"Algorithms Implemented With C#\" compiling and runing correctly!\n");
 
-int[] toSortArray = new int[]
-{
-    23, 48, 12, 99, 1, 2, 1, 0, 24
-};
-
-Console.WriteLine("Array before sorting");
-
-Console.WriteLine(string.Join(", ", toSortArray));
-
-Console.WriteLine("\nArray after sorting");
-
-Console.WriteLine(string.Join(", ", new BubbleSort().Sort(toSortArray)));
-
-Console.WriteLine(string.Join(", ", new SelectionSort().Sort(toSortArray)));
-
-Console.WriteLine(string.Join(", ", new QuickSort().Sort(toSortArray)));
+Console.WriteLine("Run the Unit Tests to check if everything is working as expected before " +
+    "the developers implement an User Interface!\n");
 
 Console.ReadLine();
