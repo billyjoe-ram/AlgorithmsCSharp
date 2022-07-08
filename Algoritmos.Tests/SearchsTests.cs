@@ -27,24 +27,50 @@ namespace Algoritmos.Tests
         [Fact(DisplayName = "Linear search finding")]
         public void TestLinearSearch()
         {
-            var searchMethod = new BinarySearch();
+            var searchMethod = new LinearSearch();
 
             var sortedArray = new QuickSort().Sort(_numbersArray);
 
             int index = searchMethod.Search(_chosenNumber, sortedArray);
 
-            Assert.NotEqual(9, index);
+            Assert.Equal(9, index);
         }
 
         [Trait("Searchs", "Linear")]
         [Fact(DisplayName = "Linear search not finding")]
         public void TestLinearSearchElementNotFound()
         {
-            var searchMethod = new BinarySearch();
+            var searchMethod = new LinearSearch();
 
             var sortedArray = new QuickSort().Sort(_numbersArray);
 
-            int index = searchMethod.Search(101, _numbersArray);
+            int index = searchMethod.Search(101, sortedArray);
+
+            Assert.Equal(-1, index);
+        }
+
+        [Trait("Searchs", "Jump")]
+        [Fact(DisplayName = "Jump search finding")]
+        public void TestJumpSearch()
+        {
+            var searchMethod = new JumpSearch();
+
+            var sortedArray = new QuickSort().Sort(_numbersArray);
+
+            int index = searchMethod.Search(_chosenNumber, sortedArray);
+
+            Assert.Equal(9, index);
+        }
+
+        [Trait("Searchs", "Jump")]
+        [Fact(DisplayName = "Jump search not finding")]
+        public void TestJumpSearchElementNotFound()
+        {
+            var searchMethod = new JumpSearch();
+
+            var sortedArray = new QuickSort().Sort(_numbersArray);
+
+            int index = searchMethod.Search(101, sortedArray);
 
             Assert.Equal(-1, index);
         }
@@ -59,7 +85,7 @@ namespace Algoritmos.Tests
 
             int index = searchMethod.Search(_chosenNumber, sortedArray);
 
-            Assert.NotEqual(9, index);
+            Assert.Equal(9, index);
         }
 
         [Trait("Searchs", "Binary")]
@@ -70,7 +96,7 @@ namespace Algoritmos.Tests
 
             var sortedArray = new QuickSort().Sort(_numbersArray);
 
-            int index = searchMethod.Search(101, _numbersArray);
+            int index = searchMethod.Search(101, sortedArray);
 
             Assert.Equal(-1, index);
         }
