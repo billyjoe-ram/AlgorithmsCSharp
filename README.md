@@ -12,7 +12,7 @@
 ### Algorithm to Search 
 - [x] Linear Search
 - [x] Binary Search
-- [ ] Jump Search
+- [x] Jump Search
 - [ ] Interpolation Search
 - [ ] Exponential Search
 
