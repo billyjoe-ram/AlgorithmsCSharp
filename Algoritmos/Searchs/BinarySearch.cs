@@ -12,7 +12,7 @@
 
         private int RecursiveSearch(int value, int[] collection, int startIndex, int endIndex)
         {
-            if (startIndex >= endIndex)
+            if (startIndex > endIndex)
             {
                 return -1;
             }
