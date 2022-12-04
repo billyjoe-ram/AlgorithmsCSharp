@@ -47,5 +47,16 @@ namespace Algoritmos.Tests
 
             Assert.Equal(_arraySortedCorrectly, sortedArray);
         }
+
+        [Fact(DisplayName = "Insertion Sort algorithm")]
+        [Trait("Sorts", "Insertion")]
+        public void TestInsertion()
+        {
+            var sortMethod = new InsertionSort();
+
+            var sortedArray = sortMethod.Sort(_toSortArray);
+
+            Assert.Equal(_arraySortedCorrectly, sortedArray);
+        }
     }
 }
